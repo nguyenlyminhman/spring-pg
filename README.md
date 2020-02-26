@@ -1,6 +1,6 @@
 # Spring Boot & Postgre SQL
 
-### Research spring boot application as an example.
+### Spring Boot Application.
 
 - Create spring boot from https://start.spring.io/
 
