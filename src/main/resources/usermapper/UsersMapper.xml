@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="vn.com.spring.mapper.UsersMapper">
+
+    <resultMap id="AllUser" type="UsersModel">
+        <result column="id" property="id"/>
+        <result column="Firstname" property="firstname"/>
+        <result column="Lastname" property="lastname"/>
+        <result column="Email" property="email"/>
+    </resultMap>
+
+    <select id="getAllUser" resultMap="AllUser">
+        SELECT *
+        FROM vktd.users
+    </select>
+</mapper>
