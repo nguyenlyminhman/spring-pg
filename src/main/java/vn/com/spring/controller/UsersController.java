@@ -17,7 +17,7 @@ public class UsersController {
     private UserService iUserService;
 
     @GetMapping("user")
-    public List<UsersModel> getAllUser(){
+    public List<UsersModel> getAllUser() {
         return iUserService.getAllUser();
     }
 }
