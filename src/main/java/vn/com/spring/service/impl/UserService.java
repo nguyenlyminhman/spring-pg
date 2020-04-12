@@ -24,7 +24,7 @@ public class UserService implements IUsersService {
         try {
             usersModelList = mapper.getAllUser();
         } catch (Exception ex) {
-            LOGGER.error("Error when get all user");
+            LOGGER.error("Error when get all user" + ex);
         }
         return usersModelList;
     }
